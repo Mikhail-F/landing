@@ -1,3 +1,5 @@
+@import "./src/components/colors"
+
 .header
   background: linear-gradient(0deg, #98C3E8 -85%, rgba(152, 195, 232, 0) 31.12%)
   min-height: 770px
@@ -9,29 +11,30 @@
     justify-content: space-between
     align-items: center
     margin: 50px auto 0 auto
+    padding: 0 20px
 
     .nav_circle
       display: flex
       justify-content: center
       align-items: center
-      color: #316099
+      color: $back-footer-border
       font-size: 20px
       font-weight: bold
       position: relative
 
       .circle_inner_text
-        border: 2px solid #316099
+        border: 2px solid $back-footer-border
         border-radius: 50%
         width: 32px
         height: 32px
-        background: white
+        background: $white
         z-index: 1
 
       &:before
         content: ''
         position: absolute
-        border: 2px solid #316099
-        background: #316099
+        border: 2px solid $back-footer-border
+        background: $back-footer-border
         border-radius: 50%
         width: 32px
         height: 32px
@@ -47,7 +50,7 @@
       cursor: pointer
 
       .burger_line
-        background: #316099
+        background: $back-footer-border
         width: 100%
         height: 3px
 
@@ -69,7 +72,7 @@
         text-align: left
 
         .article_title
-          color: #1F3F68
+          color: $main-color
           font-size: 50px
           line-height: 74px
           margin: 0
@@ -77,7 +80,7 @@
           font-family: auto
 
         .article_subtitle
-          color: #1F3F68
+          color: $main-color
           margin: 40px 0 70px 0
           max-width: 425px
           opacity: 0.6
@@ -86,14 +89,16 @@
           font-weight: 300
 
         .article_btn
-          background: #5A98D0
+          background: $back-btn-color
           box-shadow: 5px 10px 20px rgba(53, 110, 173, 0.2)
           border-radius: 10px
           outline: none
           border: none
           padding: 15px 48px
-          color: white
+          color: $white
           cursor: pointer
+          &:hover
+            opacity: 0.7
 
       .image_wrapper
         max-width: 805px
@@ -101,3 +106,21 @@
         right: 50px
         top: 5px
         z-index: 0
+
+@media (max-width: 800px)
+  .header
+    .header_center
+      .header_center_wrapper
+        justify-content: center
+
+        .article
+          text-align: center
+          .article_title
+            font-size: 40px
+
+@media (max-width: 400px)
+  .header_center
+    .header_center_wrapper
+      .article
+        .article_title
+          font-size: 40px

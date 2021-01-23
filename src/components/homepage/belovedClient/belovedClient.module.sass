@@ -1,5 +1,7 @@
+@import "./src/components/colors"
+
 .beloved_client_wrapper
-  background: #5A98D0
+  background: $back-btn-color
   border-radius: 200px 0 0 0
 
   .beloved_client
@@ -10,7 +12,7 @@
     .beloved_client_header
       display: flex
       align-items: center
-      text-align: left
+      text-align: $main-color
       margin-bottom: 120px
       padding: 0 20px
       flex-wrap: wrap
@@ -18,10 +20,10 @@
       .title
         margin-right: 100px
         max-width: 190px
-        color: white
+        color: $white
 
       .subtitle
-        color: white
+        color: $white
         max-width: 520px
         opacity: 0.6
         line-height: 26px
@@ -32,9 +34,10 @@
       display: flex
       flex-direction: row
       flex-wrap: wrap
+      padding: 0 20px
 
       .block
-        color: white
+        color: $white
         padding: 42px 0
         font-size: 20px
         line-height: 46px
@@ -48,7 +51,31 @@
         border-bottom: 1px solid white
 
       .more_client
-        background: #1F3F68
-        a
-          text-decoration: none
-          color: white
+        background: $main-color
+        text-decoration: none
+        color: $white
+        &:hover
+          opacity: 0.7
+
+
+@media (max-width: 800px)
+  .beloved_client_wrapper
+
+    .beloved_client
+
+      .beloved_client_header
+        margin-bottom: 60px
+        justify-content: center
+        text-align: center
+        flex-direction: column
+
+        .title
+          margin-right: 0
+
+      .block_wrapper
+        .block
+          width: 50%
+          &:nth-child(2), &:nth-child(6)
+            border-right: none
+          &:nth-child(5), &:nth-child(6)
+            border-bottom: 1px solid white

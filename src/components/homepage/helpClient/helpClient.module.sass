@@ -1,3 +1,5 @@
+@import "./src/components/colors"
+
 .helpClient
   display: flex
   justify-content: center
@@ -31,11 +33,11 @@
       text-align: left
 
       .content_wrapper_title
-        color: #1F3F68
+        color: $main-color
         font-size: 20px
 
       .content_wrapper_subtitle
-        color: #1F3F68
+        color: $main-color
         font-size: 16px
         opacity: 0.6
         line-height: 26px
@@ -46,8 +48,10 @@
 
     .block_btn
       position: relative
-      color: #5A98D0
+      color: $back-btn-color
       text-decoration: none
+      &:hover
+        opacity: 0.5
 
       &:after
         content: '\27A4'
@@ -61,7 +65,7 @@
     flex-basis: 50%
 
     .description
-      color: #316099
+      color: $back-footer-border
       font-size: 36px
       line-height: 46px
       width: 358px
@@ -75,3 +79,22 @@
 
   .column_right
     padding: 0 10px
+
+@media (max-width: 800px)
+  .helpClient
+    .column_left
+      .description
+        margin-top: 0
+        text-align: center
+
+@media (max-width: 400px)
+  .helpClient
+    .column_left
+      .description
+        font-size: 33px
+        margin-bottom: 0
+    .block
+      max-width: 290px
+      padding: 20px
+      .block_img
+        left: 7%

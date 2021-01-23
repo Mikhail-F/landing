@@ -24,7 +24,7 @@ const BelovedClient = () => {
                     <div className={`${styles.block} ${styles.brdr_right}`}>LOGO CLIENT 5</div>
                     <div className={`${styles.block} ${styles.brdr_right}`}>LOGO CLIENT 6</div>
                     <div className={`${styles.block} ${styles.brdr_right}`}>LOGO CLIENT 7</div>
-                    <div className={`${styles.block} ${styles.more_client}`}><NavLink to={'#'}>More Client</NavLink></div>
+                    <NavLink to={'#'} className={`${styles.block} ${styles.more_client}`}>More Client</NavLink>
                 </div>
             </div>
             <Footer/>

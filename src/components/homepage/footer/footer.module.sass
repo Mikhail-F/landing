@@ -12,6 +12,21 @@
     align-items: center
     flex-direction: column
 
+    .border_top_wrapper
+      display: flex
+      width: 100%
+
+      .border_top
+        border-top: 1px solid white
+        max-width: 1065px
+        display: flex
+        flex-direction: column
+        width: 100%
+        align-items: flex-end
+
+        .footer_block_wrapper
+          margin-top: 96px
+
     .footer_block_wrapper
       display: flex
       flex-direction: row
@@ -34,15 +49,6 @@
         align-items: end
         flex-wrap: wrap
         margin-bottom: 64px
-
-      &:nth-child(2)::after
-        content: ''
-        position: absolute
-        background: $white
-        height: 1px
-        width: 123%
-        top: -96px
-        left: -220px
 
       &:nth-child(1)
         margin-bottom: 96px
@@ -83,6 +89,8 @@
           .link
             color: $white
             text-decoration: none
+            &:hover
+              opacity: 0.7
 
           &:nth-child(1)
             margin-top: 0
@@ -135,6 +143,8 @@
         padding: 15px 75px
         text-decoration: none
         color: $white
+        &:hover
+          opacity: 0.5
 
   .footer_all_right
     max-width: 900px
