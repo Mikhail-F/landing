@@ -89,6 +89,7 @@
           .link
             color: $white
             text-decoration: none
+
             &:hover
               opacity: 0.7
 
@@ -119,7 +120,6 @@
               width: 32px
               height: 32px
               background: $white
-              z-index: 1
 
           &:before
             content: ''
@@ -131,7 +131,6 @@
             height: 33px
             left: -15px
             top: 0
-            z-index: 0
 
         .links
           display: flex
@@ -141,8 +140,11 @@
         background: $back-btn-color
         border-radius: 10px
         padding: 15px 75px
-        text-decoration: none
         color: $white
+        outline: none
+        border: none
+        cursor: pointer
+
         &:hover
           opacity: 0.5
 
@@ -156,6 +158,119 @@
     line-height: 26px
     font-size: 16px
     font-weight: 300
+
+// Footer Modal
+.sendModal_wrapper
+  position: fixed
+  top: 0
+  left: 0
+  right: 0
+  bottom: 0
+  background: rgba(128, 128, 128, 0.5)
+  display: flex
+  justify-content: center
+  align-items: center
+  z-index: 1
+
+  .sendModal
+    background: $white
+    padding: 20px
+    box-shadow: 5px 10px 50px rgba(16, 112, 177, 0.2)
+    border-radius: 10px
+    position: relative
+    color: $main-color
+
+    .send_modal_btn
+      background: #5A98D0
+      box-shadow: 5px 20px 50px rgba(16, 112, 177, 0.2)
+      border-radius: 10px
+      border: none
+      padding: 5px 10px
+      outline: none
+      cursor: pointer
+      color: $white
+      top: -5px
+      right: -5px
+      position: absolute
+
+      &:hover
+        opacity: 0.7
+
+.form_wrapper
+  position: fixed
+  top: 0
+  left: 0
+  right: 0
+  bottom: 0
+  background: rgba(128, 128, 128, 0.5)
+  display: flex
+  justify-content: center
+  align-items: center
+  z-index: 1
+
+  .form
+    background: $white
+    padding: 56px
+    box-shadow: 5px 10px 50px rgba(16, 112, 177, 0.2)
+    border-radius: 10px
+    position: relative
+
+    .closeModal
+      border-radius: 50%
+      background: $main-color
+      color: white
+      padding: 8px 12px
+      cursor: pointer
+      position: absolute
+      top: -10px
+      right: -10px
+
+      &:hover
+        opacity: 0.7
+
+    .buttonSend
+      width: 100%
+      background: #5A98D0
+      box-shadow: 5px 20px 50px rgba(16, 112, 177, 0.2)
+      border-radius: 10px
+      border: none
+      margin-top: 70px
+      padding: 23px 0
+      outline: none
+      cursor: pointer
+      color: $white
+
+      &:hover
+        opacity: 0.7
+
+    .modal_text
+      font-size: 18px
+      color: $main-color
+      text-align: left
+      margin-top: 0
+      margin-bottom: 30px
+
+    .form_text
+      font-size: 16px
+      color: $main-color
+      text-align: left
+
+    .footerForm
+      .text_area_modal
+        max-width: 400px
+        max-height: 150px
+        width: 400px
+        height: 150px
+
+      .footerFormInput
+        border: 1px solid #356EAD
+        border-radius: 10px
+        padding: 20px 35px
+        width: 400px
+
+      .error
+        border-color: red
+        color: red
 
 @media (max-width: 800px)
   .footer
@@ -181,3 +296,21 @@
           flex-direction: column
           align-items: center
           width: 330px
+
+  .form_wrapper
+    .form
+      .buttonSend
+        margin-top: 40px
+      .footerForm
+        .footerFormInput
+          width: 300px
+
+@media (max-width: 450px)
+  .form_wrapper
+    .form
+      padding: 25px
+      .buttonSend
+        margin-top: 20px
+      .footerForm
+        .footerFormInput
+          width: 250px
