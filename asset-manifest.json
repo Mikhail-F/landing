@@ -1,8 +1,8 @@
 {
   "files": {
-    "main.css": "/landing/static/css/main.75a829f7.chunk.css",
-    "main.js": "/landing/static/js/main.8d78fdcf.chunk.js",
-    "main.js.map": "/landing/static/js/main.8d78fdcf.chunk.js.map",
+    "main.css": "/landing/static/css/main.1d662dd0.chunk.css",
+    "main.js": "/landing/static/js/main.9c8d520e.chunk.js",
+    "main.js.map": "/landing/static/js/main.9c8d520e.chunk.js.map",
     "runtime-main.js": "/landing/static/js/runtime-main.1c1a1613.js",
     "runtime-main.js.map": "/landing/static/js/runtime-main.1c1a1613.js.map",
     "static/js/2.bc897ec2.chunk.js": "/landing/static/js/2.bc897ec2.chunk.js",
@@ -10,7 +10,7 @@
     "static/js/3.98f00ff5.chunk.js": "/landing/static/js/3.98f00ff5.chunk.js",
     "static/js/3.98f00ff5.chunk.js.map": "/landing/static/js/3.98f00ff5.chunk.js.map",
     "index.html": "/landing/index.html",
-    "static/css/main.75a829f7.chunk.css.map": "/landing/static/css/main.75a829f7.chunk.css.map",
+    "static/css/main.1d662dd0.chunk.css.map": "/landing/static/css/main.1d662dd0.chunk.css.map",
     "static/js/2.bc897ec2.chunk.js.LICENSE.txt": "/landing/static/js/2.bc897ec2.chunk.js.LICENSE.txt",
     "static/media/index.sass": "/landing/static/media/Gilroy-UltraLightItalic.a6fc8679.eot",
     "static/media/block_1.42a43fca.png": "/landing/static/media/block_1.42a43fca.png",
@@ -21,7 +21,7 @@
   "entrypoints": [
     "static/js/runtime-main.1c1a1613.js",
     "static/js/2.bc897ec2.chunk.js",
-    "static/css/main.75a829f7.chunk.css",
-    "static/js/main.8d78fdcf.chunk.js"
+    "static/css/main.1d662dd0.chunk.css",
+    "static/js/main.9c8d520e.chunk.js"
   ]
 }
