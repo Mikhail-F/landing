@@ -17,7 +17,7 @@ const FooterModalForm = ({handleSubmit, setModalView}) => {
                 </div>
                 <div>
                     <p className={styles.form_text}>Email</p>
-                    <Field component={Input} name={'password'} validate={[required, maxLength]} type={'text'} placeholder={'Your Email'}/>
+                    <Field component={Input} name={'password'} validate={[required, maxLength]} type={'email'} placeholder={'Your Email'}/>
                 </div>
                 <div>
                     <p className={styles.form_text}>Message</p>
