@@ -50,16 +50,12 @@
       position: relative
       color: $back-btn-color
       text-decoration: none
+      display: flex
+      align-items: center
       &:hover
         opacity: 0.5
-
-      &:after
-        content: '\27A4'
-        position: absolute
-        width: 30px
-        height: 30px
-        right: -45px
-        top: -1px
+      .block_btn_arrow
+        margin-left: 20px
 
   .column_left
     flex-basis: 50%
